@@ -17,6 +17,7 @@
 		02DFCE8328EA89F900779E2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DFCE8228EA89F900779E2C /* Preview Assets.xcassets */; };
 		0B3EDFDC29496DA9003961E5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3EDFDB29496DA9003961E5 /* AppColor.swift */; };
 		0B4C2636297F5B0500F5BC87 /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C2635297F5B0500F5BC87 /* RecipeCategoryGridView.swift */; };
+		0BD766B02A70F2CB00486BE6 /* ModifyRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD766AF2A70F2CB00486BE6 /* ModifyRecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		02DFCE8228EA89F900779E2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B3EDFDB29496DA9003961E5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		0B4C2635297F5B0500F5BC87 /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
+		0BD766AF2A70F2CB00486BE6 /* ModifyRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +49,8 @@
 		0208DC96292D85DE0027F697 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				02DFCE7D28EA89F700779E2C /* RecipesListView.swift */,
-				029383402943F0730010155A /* RecipeDetailView.swift */,
-				0B4C2635297F5B0500F5BC87 /* RecipeCategoryGridView.swift */,
+				0BD766AD2A70F28A00486BE6 /* ExploreRecipes */,
+				0BD766AE2A70F29D00486BE6 /* ModifyRecipes */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +108,24 @@
 				02DFCE8228EA89F900779E2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BD766AD2A70F28A00486BE6 /* ExploreRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				02DFCE7D28EA89F700779E2C /* RecipesListView.swift */,
+				029383402943F0730010155A /* RecipeDetailView.swift */,
+				0B4C2635297F5B0500F5BC87 /* RecipeCategoryGridView.swift */,
+			);
+			path = ExploreRecipes;
+			sourceTree = "<group>";
+		};
+		0BD766AE2A70F29D00486BE6 /* ModifyRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				0BD766AF2A70F2CB00486BE6 /* ModifyRecipeView.swift */,
+			);
+			path = ModifyRecipes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +202,7 @@
 				029383412943F0740010155A /* RecipeDetailView.swift in Sources */,
 				02DFCE7E28EA89F700779E2C /* RecipesListView.swift in Sources */,
 				0B3EDFDC29496DA9003961E5 /* AppColor.swift in Sources */,
+				0BD766B02A70F2CB00486BE6 /* ModifyRecipeView.swift in Sources */,
 				02A86F612940123C00999F3C /* RecipeData.swift in Sources */,
 				02DFCE7C28EA89F700779E2C /* MealPrepApp.swift in Sources */,
 				0B4C2636297F5B0500F5BC87 /* RecipeCategoryGridView.swift in Sources */,
