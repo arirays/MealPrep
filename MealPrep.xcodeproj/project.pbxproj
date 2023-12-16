@@ -17,6 +17,8 @@
 		02DFCE8328EA89F900779E2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DFCE8228EA89F900779E2C /* Preview Assets.xcassets */; };
 		0B37C8602A6099E9009FB297 /* ModifyRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B37C85F2A6099E9009FB297 /* ModifyRecipeView.swift */; };
 		0B3D70552B2A93F5004F2FEB /* ModifyMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D70542B2A93F5004F2FEB /* ModifyMainInformationView.swift */; };
+		0B3D70752B2D2558004F2FEB /* ModifyIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D70742B2D2558004F2FEB /* ModifyIngredientView.swift */; };
+		0B3D70772B2D2B29004F2FEB /* ModifyIngredientsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D70762B2D2B29004F2FEB /* ModifyIngredientsListView.swift */; };
 		0B3EDFDC29496DA9003961E5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3EDFDB29496DA9003961E5 /* AppColor.swift */; };
 		0B4C2636297F5B0500F5BC87 /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C2635297F5B0500F5BC87 /* RecipeCategoryGridView.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,8 @@
 		02DFCE8228EA89F900779E2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B37C85F2A6099E9009FB297 /* ModifyRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRecipeView.swift; sourceTree = "<group>"; };
 		0B3D70542B2A93F5004F2FEB /* ModifyMainInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyMainInformationView.swift; sourceTree = "<group>"; };
+		0B3D70742B2D2558004F2FEB /* ModifyIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientView.swift; sourceTree = "<group>"; };
+		0B3D70762B2D2B29004F2FEB /* ModifyIngredientsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientsListView.swift; sourceTree = "<group>"; };
 		0B3EDFDB29496DA9003961E5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		0B4C2635297F5B0500F5BC87 /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +121,8 @@
 			children = (
 				0B37C85F2A6099E9009FB297 /* ModifyRecipeView.swift */,
 				0B3D70542B2A93F5004F2FEB /* ModifyMainInformationView.swift */,
+				0B3D70742B2D2558004F2FEB /* ModifyIngredientView.swift */,
+				0B3D70762B2D2B29004F2FEB /* ModifyIngredientsListView.swift */,
 			);
 			path = ModifyRecipes;
 			sourceTree = "<group>";
@@ -159,7 +165,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					02DFCE7728EA89F700779E2C = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -207,8 +213,10 @@
 				02DFCE7E28EA89F700779E2C /* RecipesListView.swift in Sources */,
 				0B3EDFDC29496DA9003961E5 /* AppColor.swift in Sources */,
 				0B37C8602A6099E9009FB297 /* ModifyRecipeView.swift in Sources */,
+				0B3D70752B2D2558004F2FEB /* ModifyIngredientView.swift in Sources */,
 				02A86F612940123C00999F3C /* RecipeData.swift in Sources */,
 				02DFCE7C28EA89F700779E2C /* MealPrepApp.swift in Sources */,
+				0B3D70772B2D2B29004F2FEB /* ModifyIngredientsListView.swift in Sources */,
 				0B4C2636297F5B0500F5BC87 /* RecipeCategoryGridView.swift in Sources */,
 				0208DC7729133E850027F697 /* AllRecipes.swift in Sources */,
 			);
@@ -253,6 +261,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -313,6 +322,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
