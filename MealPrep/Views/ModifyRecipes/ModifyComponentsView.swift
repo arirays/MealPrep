@@ -44,7 +44,8 @@ struct ModifyComponentsView<Component:RecipeComponent, DestinationView: ModifyCo
                 Spacer()
                 NavigationLink("Add the first \(Component.singularName())", destination: addComponentView)
                 Spacer()
-            } else {
+            } 
+            else {
                 HStack {
                     Text(Component.pluralName().capitalized)
                         .font(.title)
@@ -52,12 +53,18 @@ struct ModifyComponentsView<Component:RecipeComponent, DestinationView: ModifyCo
                     Spacer()
                 }
                 List {
-                    ForEach(components.indices, id: \.self) { index in
+                    ForEach(components.indices, id: \.self) { index in 
                         let component = components[index]
-                        Text(component.description)
+                        let editComponentView = DestinationView(component: $components[index]) { _ in
+                            return
+                        }
+                            .navigationTitle("Edit" + "\(Component.singularName().capitalized)")
+                        NavigationLink(component.description, destination: editComponentView)
                     }
-                    NavigationLink("Add another \(Component.singularName())", destination: addComponentView)
-                        .buttonStyle(PlainButtonStyle())
+                    .onDelete { components.remove(atOffsets: $0)}
+                    .onMove(perform: { indices, newOffset in
+                        components.move(fromOffsets: indices, toOffset: newOffset)
+                    })
                 }
             }
         }
