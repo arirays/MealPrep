@@ -10,6 +10,12 @@ import Foundation
 class RecipeData: ObservableObject {
     @Published var recipes = Recipe.testRecipes
     
+    // Computed property inside RecipeData will filter recipes by isFavorite property, so we can find the ones that have been selected as favorites.
+    var favoriteRecipes: [Recipe] {
+        recipes.filter { $0.isFavorite }
+    }
+    
+    
     func recipes(for category: MainInformation.Category) -> [Recipe] {
         var filteredRecipes = [Recipe]()
         for recipe in recipes {
