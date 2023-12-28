@@ -17,7 +17,7 @@ struct ModifyDirectionView: ModifyComponentView {
     }
     @Environment(\.presentationMode) private var mode
     
-    private let listBackgroundColor = AppColor.background
+    @AppStorage("listBackgroundColor") private var listBackgroundColor = AppColor.background
     
     var body: some View {
         Form {
