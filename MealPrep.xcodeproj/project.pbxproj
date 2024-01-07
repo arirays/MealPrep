@@ -82,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				02108F2928F4D1A2003D84F7 /* Recipe.swift */,
+				0208DC7629133E850027F697 /* AllRecipes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,7 +112,6 @@
 				02DFCE7B28EA89F700779E2C /* MealPrepApp.swift */,
 				02DFCE7F28EA89F900779E2C /* Assets.xcassets */,
 				02DFCE8128EA89F900779E2C /* Preview Content */,
-				0208DC7629133E850027F697 /* AllRecipes.swift */,
 			);
 			path = MealPrep;
 			sourceTree = "<group>";
